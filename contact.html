@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Me</title>
+</head>
+<body bgcolor="rosybrown">
+    <center>
+        <h1>Contact Me</h1>
+
+        <!-- Navigation bar -->
+        <nav>
+            <table align="center">
+                <tr>
+                    <td><a href="index.html">Home</a></td>
+                    <!-- Space between links -->
+                    <td>&nbsp;&nbsp;&nbsp;</td> 
+                    <td><a href="about.html">About Me</a></td>
+                    <td>&nbsp;&nbsp;&nbsp;</td>
+                    <td><a href="contact.html">Contact Me</a></td>
+                    <td>&nbsp;&nbsp;&nbsp;</td> 
+                    <td><a href="InformationPages/bands.html">Best Chicago Bands</a></td>
+                    <td>&nbsp;&nbsp;&nbsp;</td>
+                    <td><a href="InformationPages/venues.html">Best Chicago Venues</a></td>
+                </tr>
+            </table>
+        </nav>
+
+        <p>Reach out to me through this form!</p>
+
+        <!-- Contact form -->
+        <form action="mailto:claire.silverstein@du.edu" method="GET">
+            <!-- Name field -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <!-- Email field -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <!-- Message field -->
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="body" rows="5" cols="30" required></textarea><br><br>
+
+            <!-- Hidden subject field for the email -->
+            <input type="hidden" name="subject" value="Contact Form Submission">
+
+            <!-- Submit button -->
+            <button type="submit">Send</button>
+        </form>
+
+        <!-- Additional contact information -->
+        <p>You can also reach me by phone: 773-621-0535</p>
+
+        <!-- Microphone image for decoration -->
+        <img src="Images/microphone.png" alt="Microphone" style="position: fixed; top: 0; right: 0; height: 100%;">
+    </center>
+</body>
+</html>
